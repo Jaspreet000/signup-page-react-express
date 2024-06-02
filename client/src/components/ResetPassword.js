@@ -57,7 +57,7 @@ const ResetPassword = () => {
         setIsLoading(true);
 
         try {
-            const response = await axios.post('http://localhost:3300/reset-password', { token, password });
+            const response = await axios.post('https://signup-page-react-express.onrender.com/reset-password', { token, password });
             if (response.status === 200) {
                 notifySuccess();
                 setTimeout(() => {
