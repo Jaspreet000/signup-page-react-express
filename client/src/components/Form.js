@@ -87,7 +87,7 @@ const Form = () => {
             });
 
             // Send data to the backend
-            const response = await axios.post('http://localhost:3300/signup', {
+            const response = await axios.post('https://signup-page-react-express.onrender.com/signup', {
                 email: formInput.email,
                 password: formInput.password,
             });
