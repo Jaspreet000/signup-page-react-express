@@ -41,7 +41,7 @@ const ForgotPassword = () => {
         event.preventDefault();
 
         try {
-            const response = await axios.post('http://localhost:3300/request-password-reset', { email });
+            const response = await axios.post('https://signup-page-react-express.onrender.com/request-password-reset', { email });
             if (response.status === 200) {
                 notifySuccess();
             }
