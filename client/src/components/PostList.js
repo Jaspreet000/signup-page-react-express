@@ -12,7 +12,7 @@ const PostList = () => {
     const fetchPosts = async (page) => {
         try {
             const token = localStorage.getItem('token');
-            const response = await axios.get(`http://localhost:3300/posts?_limit=10&_page=${page}`, {
+            const response = await axios.get(`https://signup-page-react-express.onrender.com/posts?_limit=10&_page=${page}`, {
                 headers: {
                     'Authorization': token
                 }
