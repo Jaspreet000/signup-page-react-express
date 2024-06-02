@@ -1,0 +1,30 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.padin{
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.gapp{
+  gap:2rem;
+}
+
+.colorrr{
+  color: #8b5cf6;
+}
+
+.color-img-below{
+  color: #834877;
+}
+.color-text-desc{
+  color: #ae69e1;
+}
+
+@media (min-width:1180px){
+  .padin{
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+}
