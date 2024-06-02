@@ -101,7 +101,7 @@ app.post('/request-password-reset', async (req, res) => {
         user.resetPasswordExpires = Date.now() + 3600000; // 1 hour
         await user.save();
 
-        const resetUrl = `http://localhost:3000/reset-password/${token}`;
+        const resetUrl = `https://signup-page-react-express.vercel.app//reset-password/${token}`;
 
         const mailOptions = {
             to: user.email,
