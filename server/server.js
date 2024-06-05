@@ -10,7 +10,7 @@ require('dotenv').config();
 const { userModel, postModel } = require('./models/user-model');
 const authenticatetoken = require('./middleware/authenticatetoken');
 const app = express();
-const port = 3300;
+const port = process.env.PORT || 3300;
 
 app.use(cors());
 app.use(express.json());
@@ -101,7 +101,7 @@ app.post('/request-password-reset', async (req, res) => {
         user.resetPasswordExpires = Date.now() + 3600000; // 1 hour
         await user.save();
 
-        const resetUrl = `http://localhost:3000/reset-password/${token}`;
+        const resetUrl = `https://signup-page-react-express.vercel.app//reset-password/${token}`;
 
         const mailOptions = {
             to: user.email,
