@@ -28,3 +28,89 @@
     padding-right: 5rem;
   }
 }
+.outer{
+  display: flex;
+  flex-direction: column;
+  height:100%
+
+}
+
+@media (max-height:746px){
+  .out-outer{
+    height: 96vh;
+    padding-top:20px ;
+  }
+  .new-here{
+    font-size: 5vh;
+  }
+  .welc{
+    font-size: 2.5vh;
+    margin-top: 1vh;
+  }
+  .out-form{
+    margin-top: 2vh;
+  }
+  .mail{
+    font-size: 2.5vh;
+  }
+  .mail-inp{
+    font-size: 2.4vh;
+    padding: 2vh;
+  }
+  .pass{
+    font-size: 2.5vh;
+  }
+  .pass-inp{
+    font-size: 2.4vh;
+    padding: 2vh;
+  }
+  .conf-pass{
+    font-size: 2.5vh;
+  }
+  .conf-pass-in{
+    font-size: 2.4vh;
+    padding: 2vh;
+  }
+  .forgot{
+    margin-top: 1vh;
+  }
+  .forgot-link{
+    font-size: 2.4vh;
+    margin-bottom: 1vh;
+  }
+  .agree{
+    font-size: 2.4vh;
+  }
+  .submitt{
+    margin-top: 2.5vh;
+    row-gap: 1.4vh;
+  }
+  .submitt-btn{
+    font-size: 2vh;
+    padding: 1.2vh;
+  }
+  .goog-sub{
+    font-size: 2vh;
+    padding: 1.2vh;
+  }
+  .already{
+    font-size: 2.4vh;
+    margin-top: 1vh;
+  }
+  .already_in{
+    font-size: 2.4vh;
+    margin-bottom: 1vh;
+  }
+  .sign-in-btn{
+    font-size: 2.4vh;
+    margin-bottom: 1vh;
+  }
+
+}
+
+@media (max-width:376px){
+  .out-outer{
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
